@@ -1,0 +1,16 @@
+apiVersion: v2
+name: liferay-stack
+appVersion: "2.0"
+description: Helm chart for Liferay Stack installation
+version: 0.0.1	
+type: application
+dependencies:
+  - name: minio
+    version: 6.1.2
+    repository: https://helm.min.io
+  - name: elasticsearch
+    version: 7.9.1
+    repository: https://helm.elastic.co 
+  - name: mysql 
+    version: 1.6.7
+    repository: '@stable'

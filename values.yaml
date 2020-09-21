@@ -1,0 +1,20 @@
+minio:
+  persistence:
+    size: 10Gi
+  accessKey: liferaySecret
+  secretKey: liferayPassword
+  buckets:
+  - name: liferay
+    policy: none
+    purge: false
+elastic:
+  clusterName: LiferayElasticsearchCluster
+  volumeClaimTemplate:
+    resources:
+      requests:
+        storage: 10Gi
+mysql:
+  mysqlRootPassword: admin
+  initializationFiles:
+    first-db.sql: |-
+      CREATE DATABASE IF NOT EXISTS lportal DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;

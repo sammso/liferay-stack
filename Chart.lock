@@ -1,0 +1,12 @@
+dependencies:
+- name: minio
+  repository: https://helm.min.io
+  version: 6.1.2
+- name: elasticsearch
+  repository: https://helm.elastic.co
+  version: 7.9.1
+- name: mysql
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 1.6.7
+digest: sha256:300b73863828f7131f5ee8525b26251dc5b373eb6461dd287c68a74ab7d4424c
+generated: "2020-09-19T11:55:24.911890227+03:00"
